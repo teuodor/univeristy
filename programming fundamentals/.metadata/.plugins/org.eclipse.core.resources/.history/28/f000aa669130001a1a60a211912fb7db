@@ -1,0 +1,31 @@
+'''
+Created on 6 Jan 2020
+
+@author: Teuodor
+'''
+n = input("Numarul de elemente: ")
+l= []
+while True:
+    try:
+        n=int(n)
+        break
+    except:
+        print("Numarul de elemente trebuie sa fie un numar natural. ")
+print("Elementele vor fi:")
+for i in range(n):
+    x = input()
+    l.append(x)
+    
+def consistent(l):
+    for i in range(1,len(l)):
+        if l[i-1]>=l[i]:
+            return False
+        
+def solution(l):
+    for i in range(1,len(l)):
+        if cifra(l[i-1], l[i]) == False:
+            return False
+    
+    return True
+
+

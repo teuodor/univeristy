@@ -1,0 +1,18 @@
+INSTUPRepository.RepoTV
+D:\laborator fp\practic\Repository\RepoTV.py
+INFOS:&&1|1|2|0|3|7|7&&1|4|2|0|3|10|7&&2|5|2|4|3|14|9&&3|6|2|7|3|15|9&&2|8|2|4|3|16|9&&2|9|2|4|3|36|9&&2|10|2|4|3|46|9&&3|6|2|11|3|50|9&&2|12|2|4|3|52|9&&2|13|2|4|3|58|9&&2|14|2|4|3|71|9&&2|15|2|4|3|89|9
+tvshows=6
+D:\laborator fp\practic\Repository\RepoTV.py=3
+RepoTvFile=4
+ExceptionRepoTv=1
+RepoTvFile.__init__=7
+save=12
+__saveInFile=9
+update=14
+RepoTvFile.load=11
+delete=13
+search=15
+load=10
+__loadFromFile=8
+__init__=5
+Repository.RepoTV=2

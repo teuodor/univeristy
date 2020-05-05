@@ -1,0 +1,16 @@
+MODULES_MANAGER_V2
+Domain.Emisiuni|D:\laborator fp\practic\Domain\Emisiuni.py
+Domain.__init__|D:\laborator fp\practic\Domain\__init__.py
+Repository.RepoTV|D:\laborator fp\practic\Repository\RepoTV.py
+Repository.__init__|D:\laborator fp\practic\Repository\__init__.py
+Service.ServiceTV|D:\laborator fp\practic\Service\ServiceTV.py
+Service.__init__|D:\laborator fp\practic\Service\__init__.py
+UI.UIConsole|D:\laborator fp\practic\UI\UIConsole.py
+UI.__init__|D:\laborator fp\practic\UI\__init__.py
+helper|D:\laborator fp\practic\helper.py
+teste.TestDomain|D:\laborator fp\practic\teste\TestDomain.py
+teste.TestRepo|D:\laborator fp\practic\teste\TestRepo.py
+teste.TestService|D:\laborator fp\practic\teste\TestService.py
+teste.__init__|D:\laborator fp\practic\teste\__init__.py
+utils.__init__|D:\laborator fp\practic\utils\__init__.py
+utils.helper|D:\laborator fp\practic\utils\helper.py

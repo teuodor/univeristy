@@ -1,0 +1,87 @@
+import math
+from getset import getReal, getImag, createComplex
+from test.inspect_fodder2 import real
+def produs(complex1,complex2):
+    a=getReal(complex1)
+    b=getImag(complex1)
+    c=getReal(complex2)
+    d=getImag(complex2)
+    return a*b-c*d,a*c+b*d
+    
+def modul(complex):
+    '''
+    Functia calculeaza modulul uni numar complex
+    in:complex
+    pre:complex-lista/dictionar
+    out: mod-radical din suma patratelor partii reale(real) si imaginare(imag)
+    post: mod-real
+    '''
+    real=getReal(complex)
+    imag=getImag(complex)
+    real=real**2
+    imag=imag**2
+    mod=math.sqrt(real+imag)
+    return mod
+
+def adaugaLista(lista,elem):
+    '''
+    Functia adauga un element in lista
+    in:lista,elem
+    pre:lista-lista
+    out:lista'-lista noua cu elementul adaugat
+    '''
+    lista.append(elem)
+
+def inserareLista(lista,poz,elem):
+    '''
+    Functia insereaza un element pe o pozitie data
+    in:lista,poz,elem
+    pre:lista-lista,poz-natural
+    output:lista'-lista noua cu elementul adaugat pe pozitia data
+    '''
+    lista.insert(poz,elem)
+
+def stergePozitieLista(lista,poz):
+    '''
+    Functia sterge un element de pe o pozitie data
+    in:lista,poz
+    pre:lista-lista,poz-natural
+    out:lista'-lista cu elementul scos de pe pozitia data
+    '''
+    del lista[poz]
+
+def stergeIntervalLista(lista,poz1,poz2):
+    '''
+    Functia sterge un interval dintr-o lista  dintre doua pozitii date
+    in:lista,poz1,poz2
+    pre:lista-lista,poz1-natural,poz2-natural,poz1<=poz2
+    out:lista'-lista cu elemetele scoase dintre cele doua pozitii
+    '''
+    del lista[poz1:poz2+1]
+
+def inlocuiesteElementLista(lista,el1,el2):
+    '''
+    Functia inlocuieste valoarea unui element cu alta valoare data
+    in:v,el1,el2
+    pre:lista-lista
+    out:lista'-lista cu el1 inlocuit cu el2 in toata lista
+    '''
+    for k in range(len(lista)):
+        if lista[k]==el1:
+            lista[k]=el2
+def sumaSubsecventa(lista,poz1,poz2):
+    s1=0
+    s2=0
+    for k in lista[poz1:poz2+1]:
+        s1+=getReal(lista[k])
+        s2+=getImag(lista[k])
+    a=createComplex(s1, s2)
+    return a
+def produsSubsecventa(lista,poz1,poz2):
+    s1=0
+    s2=0
+    a=createComplex(1,1,0)
+    for k in lista[poz1:poz2+1]:
+        s1,s2=produs(a, v[k])
+        a=createComplex(s1, s2)
+    return a

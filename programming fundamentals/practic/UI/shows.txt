@@ -1,0 +1,8 @@
+Vikings,Serial,2,Medieval SF
+Traznitii,Reality Show,2,Divertisment
+Looking,Seeing,8,Unbelieveable
+FP,Informatica,4,Test
+Profesor,Scoala,1,Didascalii
+Interfata,Grafica,3,ComputerScience
+Practic,Bucurie,10,Good
+Assembly,Horror,6,Suparare

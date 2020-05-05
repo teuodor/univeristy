@@ -1,0 +1,10 @@
+B1,Stiri,5,Information
+Free party,Documentar,2,Informare
+Game of Thrones,Serial,1,Medieval sf
+Vikings,Serial,1,Medieval
+Traznitii,Reality Show,2,Divertisment
+Inception,Film,3,Dreams
+Interfata,Grafica,6,Computer Science
+Mauit,sinuvad,8,Nu o sa crezi
+FP,Informatica,4,Test
+Profesor,Scoala,1,Didascalii

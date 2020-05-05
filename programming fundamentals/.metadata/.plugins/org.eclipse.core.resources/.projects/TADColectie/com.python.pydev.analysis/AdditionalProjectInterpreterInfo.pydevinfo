@@ -1,0 +1,45 @@
+-- VERSION_5
+-- START DISKCACHE_2
+D:\laborator fp\.metadata\.plugins\org.eclipse.core.resources\.projects\TADColectie\com.python.pydev.analysis\v2_indexcache
+TestLung|1553242975430971000|D:\laborator fp\TADColectie\TestLung.py
+Colectie|1553242975477827000|D:\laborator fp\TADColectie\Colectie.py
+TestScurt|1553242053868150000|D:\laborator fp\TADColectie\TestScurt.py
+-- END DISKCACHE
+-- START DICTIONARY
+11
+1=D:\laborator fp\TADColectie\Colectie.py
+5=D:\laborator fp\TADColectie\TestScurt.py
+11=Colectie.__init__
+7=IteratorColectie.__init__
+4=TestLung
+2=Colectie
+9=IteratorColectie.urmator
+10=IteratorColectie
+8=IteratorColectie.prim
+3=D:\laborator fp\TADColectie\TestLung.py
+6=TestScurt
+-- END DICTIONARY
+-- START TREE 1
+3
+col|1|Colectie!1^7#7*17@
+ite|1|IteratorColectie!1^79#7*17@
+tes|7|testIterator!3^146#5*34@testAll!5^3#5*50@testCreare!3^3#5*34@testAllLung!3^296#5*34@testSterge!3^64#5*34@testAdauga!3^17#5*34@testCantitate!3^265#5*34@
+-- END TREE
+-- START TREE 2
+15
+__c|3|__c!7&1^83#9*19@__curent!7&1^84#9*19@__curent!8&1^115#9*19@
+__f|3|__frecv_curenta!7&1^85#9*19@__frecv_curenta!9&1^109#13*19@__frecv_curenta!8&1^116#9*19@
+__i|2|__init__!2&1^10#9*18@__init__!10&1^82#9*18@
+__p|1|__perechi!11&1^11#9*19@
+ada|1|adauga!2&1^14#9*18@
+cau|1|cauta!2&1^43#9*18@
+dim|1|dim!2&1^60#9*18@
+ele|1|element!10&1^92#9*18@
+ite|1|iterator!2&1^75#9*18@
+nra|1|nrAparitii!2&1^52#9*18@
+pri|1|prim!10&1^114#9*18@
+ste|1|sterge!2&1^27#9*18@
+urm|1|urmator!10&1^99#9*18@
+val|1|valid!10&1^88#9*18@
+vid|1|vida!2&1^69#9*18@
+-- END TREE

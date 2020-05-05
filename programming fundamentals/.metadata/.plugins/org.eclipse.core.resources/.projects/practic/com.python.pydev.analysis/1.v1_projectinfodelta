@@ -1,0 +1,24 @@
+INSTUPDomain.Emisiuni
+D:\laborator fp\practic\Domain\Emisiuni.py
+INFOS:&&1|1|2|0|3|6|7&&2|4|2|1|3|10|9&&3|5|2|6|3|11|9&&3|7|2|6|3|12|9&&3|8|2|6|3|13|9&&3|9|2|6|3|14|9&&2|10|2|1|3|16|9&&2|11|2|1|3|19|9&&2|12|2|1|3|22|9&&2|13|2|1|3|25|9&&2|14|2|1|3|28|9&&3|5|2|15|3|29|9&&2|16|2|1|3|31|9&&3|7|2|17|3|32|9&&2|18|2|1|3|34|9&&3|8|2|19|3|35|9&&2|20|2|1|3|37|9&&3|9|2|21|3|38|9
+TV.set_descriere=21
+D:\laborator fp\practic\Domain\Emisiuni.py=3
+set_nume=14
+TV=1
+durata=8
+get_nume=10
+set_descriere=20
+set_durata=18
+set_tip=16
+nume=5
+TV.set_tip=17
+get_descriere=13
+TV.__init__=6
+TV.set_durata=19
+descriere=9
+TV.set_nume=15
+get_tip=11
+get_durata=12
+tip=7
+Domain.Emisiuni=2
+__init__=4

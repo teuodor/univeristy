@@ -1,0 +1,15 @@
+'''
+Created on 4 Dec 2018
+
+@author: Teuodor
+'''
+import csv
+fileName='events.txt'
+accesMode='r'
+list=[]
+with open(fileName,accesMode) as persons:
+    file = csv.reader(persons)
+    for k in file:
+        list.append(k)
+    print(list)
+        

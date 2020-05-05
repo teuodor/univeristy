@@ -1,0 +1,107 @@
+from ui import *
+from functionalitati import sumaSubsecventa, produsSubsecventa, adaugaLista,\
+    inserareLista, stergePozitieLista, stergeIntervalLista,\
+    inlocuiesteElementLista
+from getset import createComplex
+def help():
+    print('Meniul de comenzi al programului:')
+    print('help-afisarea meniului;')
+    print('adaugare-adauga un element in lista')
+    print('inserare-insereaza un element pe o pozitie data')
+    print('stergePozitie-sterge elementul de pe o pozitie data')
+    print('inlocuire-inlocuieste aparitia unui element cu un alt element dat')
+    print('afisare-tipareste toate elementele din lista')
+    print('afisare1-tipareste toate elementele din lista care au modulul mai mic ca 10;')
+    print('afisare2-tipareste toate elementele din lista care au modulul egal cu 10;')
+    print('afisare3-tipareste elementele in ordine descrescatoare dupa partea lor imaginara;')
+    print('afisareImag-tipareste partea imaginara a elementelor din lista')
+    print('suma-tipareste suma unei subsecvente din lista de numere complexe')
+    print('produs-tipareste produsul unei subsecvente din lista de numere complexe')
+    print('exit-iesire din program')
+def meniu(cmd,lista):
+    if cmd.lower()=='help':
+        help()
+    elif cmd.lower()=='adaugare':
+        x=input('Partea reala a numarului:')
+        y=input('Partea imaginara a numarului:')
+        try:
+            x=int(x)
+            y=int(y)
+            elem=createComplex(x,y)
+            adaugaLista(lista,elem)
+        except:
+            print('Va rugam sa puneti numere')
+    elif cmd.lower()='stergepozitie':
+        poz=input('Pozitia de stergere:')
+        try:
+            poz=int(poz)
+            stergePozitieLista(lista,poz)
+        except:
+            print('Va rugam sa puneti numere')
+    elif cmd.lower()='stergeinterval':
+        poz1=input('Pozitia de inceput de stergere:')
+        poz2=input('Pozitia de sfarsit de stergere:')
+        try:
+            poz1=int(poz1)
+            poz2=int(poz2)
+            stergeIntervalLista(lista,poz1,poz2)
+        except:
+            print('Va rugam sa puneti numere')
+    elif cmd.lower()=='inlocuire':
+        a,b=input('Elementul de inlocuit(partea reala si imaginara):')
+        c,d=input('Elementul cu care sa va inlocui(partea reala si imaginara):')
+        try:
+            a=int(a)
+            b=int(b)
+            c=int(c)
+            d=int(d)
+            x=createComplex(a, b)
+            y=createComplex(c, d)
+            inlocuiesteElementLista(lista,x,y)
+        except:
+            print('Va rugam sa puneti numere')
+    elif cmd.lower()=='inserare':
+        x=input('Partea reala a numarului:')
+        y=input('Partea imaginara a numarului:')
+        poz=input('Pozitia de inserare:')
+        try:
+            x=int(x)
+            y=int(y)
+            poz=int(poz)
+            elem=createComplex(x,y)
+            inserareLista(lista,poz,elem)
+        except:
+            print('Va rugam sa puneti numere')
+    elif cmd.lower()=='afisare':
+        afisareLista(lista)
+    elif cmd.lower()=='afisare1':
+        tiparireElemente1(lista)
+    elif cmd.lower()=='afisare2':
+        tiparireElemente2(lista)
+    elif cmd.lower()=='afisare3':
+        tiparireElementeDesc(lista)
+    elif cmd.lower()=='afisareimag':
+        afisareImaginar(lista)
+    elif cmd.lower()=='suma':
+        poz1=input('Pozitia de inceput:')
+        poz2=input('Pozitia de final')
+        try:
+            poz1=int(poz1)
+            poz2=int(poz2) 
+            print(formaComplex(sumaSubsecventa(lista,poz1,poz2)))
+        except:
+            print('Va rugam sa alegeti pozitii numere naturale')  
+    elif cmd.lower()=='produs':
+        poz1=input('Pozitia de inceput:')
+        poz2=input('Pozitia de final')
+        try:
+            poz1=int(poz1)
+            poz2=int(poz2)
+            print(formaComplex(produsSubsecventa(lista,poz1,poz2)))
+        except:
+            print('Va rugam sa alegeti pozitii numere naturale')  
+    elif cmd.lower()=='exit':
+        print('La revedere!')
+    else:
+        print('Comanda invalida!')
+    

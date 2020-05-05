@@ -1,0 +1,15 @@
+'''
+Created on 4 Feb 2019
+
+@author: Teuodor
+'''
+from Repository.RepoTV import RepoTvFile
+class test_repo:
+    def test(self):
+        repo = RepoTvFile()
+        repo.load()
+        repo.delete('Free party','Documentar')
+        assert repo.tvshows = {}
+        
+test = test_repo()
+test.test()

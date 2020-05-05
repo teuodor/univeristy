@@ -1,0 +1,9 @@
+'''
+Created on 15 Nov 2018
+
+@author: Teuodor
+'''
+s='  aNa7   '
+s=s.strip()
+v=s.split()
+print(v[-1][0])

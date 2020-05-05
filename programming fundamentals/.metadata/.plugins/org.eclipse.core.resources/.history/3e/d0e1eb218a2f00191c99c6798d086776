@@ -1,0 +1,16 @@
+'''
+Created on 13 Feb 2019
+
+@author: Teuodor
+'''
+def modul(n):
+    if n<0:
+        return -1*n
+    return n
+def solutie(l,n):
+    if len(l) == n:
+        return True
+    return False
+def consistent(l,n):
+    i = 0
+    

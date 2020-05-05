@@ -1,0 +1,4 @@
+1,Dragos,Valcea
+2,Radu,Suceava
+3,Razvan,Fagaras
+4,Andre,Baia Mare

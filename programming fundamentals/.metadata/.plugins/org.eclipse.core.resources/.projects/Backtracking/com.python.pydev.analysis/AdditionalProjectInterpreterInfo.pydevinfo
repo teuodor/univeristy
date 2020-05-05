@@ -1,0 +1,77 @@
+-- VERSION_5
+-- START DISKCACHE_2
+D:\laborator fp\.metadata\.plugins\org.eclipse.core.resources\.projects\Backtracking\com.python.pydev.analysis\v2_indexcache
+Problema62|1550327954990939000|D:\laborator fp\Backtracking\Problema62.py
+lubrifiant|1550655232809966000|D:\laborator fp\Backtracking\lubrifiant.py
+bckt|1550573835357443000|D:\laborator fp\Backtracking\bckt.py
+Problema3|1550248382956007000|D:\laborator fp\Backtracking\Problema3.py
+ProgramareDinamica|1550601014703760000|D:\laborator fp\Backtracking\ProgramareDinamica.py
+Problema6|1550317707093777000|D:\laborator fp\Backtracking\Problema6.py
+gabi0|1551114103873867000|D:\laborator fp\Backtracking\gabi0.py
+Problema1V|1553383509258731000|D:\laborator fp\Backtracking\Problema1V.py
+Problema2V|1550057566128653000|D:\laborator fp\Backtracking\Problema2V.py
+dubios2|1550606398052022000|D:\laborator fp\Backtracking\dubios2.py
+Problema4V|1550065749550619000|D:\laborator fp\Backtracking\Problema4V.py
+Problema5V|1550247905402822000|D:\laborator fp\Backtracking\Problema5V.py
+Problema10|1578320747377197000|D:\laborator fp\Backtracking\Problema10.py
+Problema7V|1550248227682489000|D:\laborator fp\Backtracking\Problema7V.py
+dubios|1550605632154741000|D:\laborator fp\Backtracking\dubios.py
+-- END DISKCACHE
+-- START DICTIONARY
+30
+6=Problema62
+27=D:\laborator fp\Backtracking\ProgramareDinamica.py
+11=D:\laborator fp\Backtracking\Problema1V.py
+10=bckt
+13=D:\laborator fp\Backtracking\dubios.py
+23=D:\laborator fp\Backtracking\Problema6.py
+3=D:\laborator fp\Backtracking\Problema2V.py
+5=D:\laborator fp\Backtracking\Problema62.py
+19=D:\laborator fp\Backtracking\dubios2.py
+17=D:\laborator fp\Backtracking\Problema7V.py
+1=D:\laborator fp\Backtracking\lubrifiant.py
+4=Problema2V
+20=dubios2
+26=Problema4V
+15=D:\laborator fp\Backtracking\Problema10.py
+16=Problema10
+2=lubrifiant
+30=myint.__init__
+22=Problema3
+28=ProgramareDinamica
+24=Problema6
+21=D:\laborator fp\Backtracking\Problema3.py
+25=D:\laborator fp\Backtracking\Problema4V.py
+7=D:\laborator fp\Backtracking\Problema5V.py
+12=Problema1V
+9=D:\laborator fp\Backtracking\bckt.py
+29=myint
+8=Problema5V
+18=Problema7V
+14=dubios
+-- END DICTIONARY
+-- START TREE 1
+15
+a|1|a!1^19#1*19@
+bck|12|bckt!3^42#5*34@bckt!5^30#5*50@bcktRec!7^22#5*66@bckt!9^29#5*82@bckt!11^16#5*98@bckt!13^49#5*114@bckt!15^24#5*130@bckt!17^36#5*146@bckt!19^34#5*162@bckt!21^23#5*178@bckt!23^36#5*194@bckt!25^15#5*210@
+cif|1|cifra!15^1#5*130@
+con|13|consistent!3^29#5*34@consistent!13^29#5*114@consistent!11^1#5*98@consecutiv!9^6#5*82@consistent!15^11#5*130@consistent!17^6#5*146@consistent!25^11#5*210@consistent!7^6#5*66@consistent!19^6#5*162@consistent!5^14#5*50@consistent!9^10#5*82@consistent!23^15#5*194@consistent!21^14#5*178@
+inc|1|increm!1^16#5*18@
+l|4|l!7^42#1*67@l!27^34#1*227@l!9^43#1*83@l!17^56#1*147@
+lis|1|list_prime!13^22#5*114@
+lon|1|longest_sub!27^7#5*226@
+mod|1|modul!21^6#5*178@
+myi|1|myint!1^6#7*17@
+n|1|n!3^60#1*35@
+num|1|numere_prime!3^36#5*34@
+pri|2|prim!13^7#5*114@prim!3^7#5*34@
+sol|14|solution!11^8#5*98@solutionFound!5^8#5*50@solutie!21^10#5*178@solution!13^42#5*114@solutionFound!9^24#5*82@solution!3^22#5*34@solution!7^16#5*66@solution!25^6#5*210@solution!15^17#5*130@solution!19^30#5*162@solutie!17^20#5*146@solution!5^21#5*50@solution!23^6#5*194@solution!9^20#5*82@
+x|1|x!17^58#5*147@
+-- END TREE
+-- START TREE 2
+4
+__a|1|__add__!29&1^10#9*18@
+__i|1|__init__!29&1^7#9*18@
+__n|1|__n!30&1^8#9*19@
+get|1|get!29&1^13#9*18@
+-- END TREE

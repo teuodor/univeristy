@@ -1,0 +1,7 @@
+'''
+Created on 13 Feb 2019
+
+@author: Teuodor
+'''
+def consistent(l):
+    

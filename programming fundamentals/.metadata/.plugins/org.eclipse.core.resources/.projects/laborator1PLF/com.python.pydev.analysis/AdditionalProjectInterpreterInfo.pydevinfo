@@ -1,0 +1,29 @@
+-- VERSION_5
+-- START DISKCACHE_2
+D:\laborator fp\.metadata\.plugins\org.eclipse.core.resources\.projects\laborator1PLF\com.python.pydev.analysis\v2_indexcache
+ListaSimpluInlantuita|1570540453937191000|D:\Programare Logica si functonala\ListaSimpluInlantuita.py
+-- END DISKCACHE
+-- START DICTIONARY
+6
+3=Nod
+4=Lista
+6=Lista.__init__
+2=ListaSimpluInlantuita
+5=Nod.__init__
+1=D:\Programare Logica si functonala\ListaSimpluInlantuita.py
+-- END DICTIONARY
+-- START TREE 1
+5
+cre|2|creareLista!1^17#5*18@creareLista_rec!1^22#5*18@
+lis|1|Lista!1^6#7*17@
+mai|1|main!1^47#5*18@
+nod|1|Nod!1^1#7*17@
+tip|2|tipar!1^34#5*18@tipar_rec!1^37#5*18@
+-- END TREE
+-- START TREE 2
+4
+__i|2|__init__!3&1^2#9*18@__init__!4&1^7#9*18@
+e|1|e!5&1^3#9*19@
+pri|2|prim!4&1^10#9*18@prim!6&1^8#9*19@
+urm|1|urm!5&1^4#9*19@
+-- END TREE

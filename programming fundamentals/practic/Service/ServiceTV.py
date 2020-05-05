@@ -1,0 +1,73 @@
+'''
+Created on 4 Feb 2019
+
+@author: Teuodor
+'''
+from Repository.RepoTV import ExceptionRepoTv
+from utils.helper import random_tv_show
+class ServiceTv:
+    '''
+    The Service for the repository of TV shows
+    '''
+    def __init__(self,repoTV):
+        self.TVshows = repoTV
+        
+    def load(self):
+        '''
+        The function loads from file to repository
+        '''
+        self.TVshows.load()
+        
+    def save(self):
+        '''
+        The function saves in file the repository
+        '''
+        self.TVshows.save()
+        
+    def delete(self,nume,tip):
+        '''
+        The function deletes a tv show from the repo and file
+        :param: name,tip
+        :post: the tv show will be deleted from the dict and file
+        '''
+        try:
+            self.TVshows.delete(nume,tip)
+            print("The TV show was deleted succesfully")
+        except ExceptionRepoTv as ve:
+            print(ve)
+            
+    def update(self,nume,tip,durata,descriere,new_desc,new_time):
+        '''
+        The function updates the time and description of a tv show
+        :param: name,tip,durata,descriere
+        :post: the tv show will be updated
+        '''
+        try:
+            self.TVshows.update(nume,tip,durata,descriere,new_desc,new_time)
+            print("The TV show was updated succesfully")
+        except ExceptionRepoTv as ve:
+            print(ve)
+            
+    def transmission_day(self):
+        '''
+        The function generates a random tv program
+        '''
+        dict = {}
+        ind = 10
+        while ind < 22:
+            key_random = random_tv_show(self.TVshows.tvshows)
+            dict[ind] = key_random
+            ind += int(self.TVshows.search(key_random).get_durata())
+            
+        return dict
+        
+    def search(self,name):
+        '''
+        The function searches after a tv show object
+        :input: name - one of the keys
+        :return: the object which has the key
+        '''
+        try:
+            return self.TVshows.search(name)
+        except ExceptionRepoTv as ve:
+            print(ve)

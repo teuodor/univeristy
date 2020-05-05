@@ -1,0 +1,47 @@
+from ui import citireComplex, tiparireElemente1,tiparireElemente2,\
+    tiparireElementeDesc, afisareImaginar, formaComplex
+from functionalitati import sumaSubsecventa, produsSubsecventa, adaugaLista
+from getset import createComplex
+def help():
+    print('Meniul de comenzi al programului:')
+    print('help-afisarea meniului;')
+    print('adaugaElement-adauga un element in lista')
+    print('afisare-tipareste toate elementele din lista')
+    print('afisare1-tipareste toate elementele din lista care au modulul mai mic ca 10;')
+    print('afisare2-tipareste toate elementele din lista care au modulul egal cu 10;')
+    print('afisare3-tipareste elementele in ordine descrescatoare dupa partea lor imaginara;')
+    print('afisareImag-tipareste partea imaginara a elementelor din lista')
+    print('suma-tipareste suma unei subsecvente din lista de numere complexe')
+    print('produs-tipareste produsul unei subsecvente din lista de numere complexe')
+    print('exit-iesire din program')
+def meniu(cmd,lista):
+    if cmd.lower()=='help':
+        help()
+    elif cmd.lower()=='adaugaelement':
+        x=input('Partea reala a numarului:')
+        y=input('Partea imaginara a numarului:')
+        elem=createComplex(x,y)
+        adaugaLista(lista,elem)
+    elif cmd.lower()=='afisare':
+        afisareLista(lista)
+    elif cmd.lower()=='afisare1':
+        tiparireElemente1(lista)
+    elif cmd.lower()=='afisare2':
+        tiparireElemente2(lista)
+    elif cmd.lower()=='afisare3':
+        tiparireElementeDesc(lista)
+    elif cmd.lower()=='afisareimag':
+        afisareImaginar(lista)
+    elif cmd.lower()=='suma':
+        poz1=input('Pozitia de inceput:')
+        poz2=input('Pozitia de final')
+        print(formaComplex(sumaSubsecventa(lista,poz1,poz2)))
+    elif cmd.lower()=='produs':
+        poz1=input('Pozitia de inceput:')
+        poz2=input('Pozitia de final')
+        print(formaComplex(produsSubsecventa(lista,poz1,poz2)))
+    elif cmd.lower()=='exit':
+        break
+    else:
+        print('Comanda invalida!')
+    

@@ -1,0 +1,31 @@
+import math
+from getset import *
+from functionalitati import *
+from ui import *
+def testGetSet():
+    a=createComplex(1, 1, 2)
+    b=getReal(a)
+    c=getImag(a)
+    assert b==1
+    assert c==2
+    
+def testFunctionalitati():
+    a=[3,4]
+    b=createComplex(1, 1, 1)
+    assert modul(b)==math.sqrt(2)
+    b=createComplex(1, 3, 4)
+    assert modul(b)==5
+    adaugaLista(a, 3)
+    assert a==[3,4,3]
+    inserareLista(a, 1, 2)
+    assert a==[3,2,4,3]
+    stergePozitieLista(a, 1)
+    assert a==[3,4,3]
+    stergeIntervalLista(a, 0,2)
+    assert a==[]
+    a=[3,3,3]
+    inlocuiesteElementLista(a,3,2)
+    assert a==[2,2,2]
+    
+testGetSet()
+testFunctionalitati()

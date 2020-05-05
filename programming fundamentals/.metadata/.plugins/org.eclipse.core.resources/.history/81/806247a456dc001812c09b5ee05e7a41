@@ -1,0 +1,10 @@
+from ui import *
+from meniu import *
+lista=[]
+while True:
+    print('Va rugam sa scrieti o comanda. Daca aveti nevoie de ajutor tastati help')
+    cmd=input('>>')
+    meniu(cmd, lista)
+    if cmd.lower()=='exit':
+        break
+    print(lista)

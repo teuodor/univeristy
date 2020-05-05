@@ -1,0 +1,16 @@
+'''
+Created on 4 Feb 2019
+
+@author: Teuodor
+'''
+from Repository.RepoTV import ExceptionRepoTv
+class ServiceTv:
+    def __init__(self,repoTV):
+        self.__TVshows = repoTV
+    def delete(self,nume,tip):
+        try:
+            self.__TVshows.delete(nume,tip)
+            print("The TV show was deleted succesfully")
+        except ExceptionRepoTv as ve:
+            print(ve)
+    

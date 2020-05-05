@@ -1,0 +1,17 @@
+'''
+Created on 4 Feb 2019
+
+@author: Teuodor
+'''
+from Domain.Emisiuni import TV
+class test_domain:
+    def test(self):
+        a = TV('Free party','Documentar',3,'Information')
+        assert a.get_nume() == 'Free party'
+        assert a.get_tip() == 'Documentar'
+        assert a.get_durata() == 3
+        assert a.get_descriere() == 'Information'
+        
+        
+test = test_domain()
+test.test()

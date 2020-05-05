@@ -1,0 +1,50 @@
+'''
+Created on 15 Feb 2019
+
+@author: Teuodor
+'''
+def solution(l,n):
+    if l == []:
+        return False
+    suma = 0
+    for i in l:
+        suma += i
+    if suma%n == 0:
+        return True
+    return False
+def consistent(x,l):
+    ind1 = -1
+    ind2 = -1
+    a = x[0]
+    for i in range(len(l)):
+        if a == l[i]:
+            ind1 = i
+        
+    for i in range(1,len(x)):
+        for j in range(ind1,len(l)):
+            if l[j] == x[i]:
+                ind2 = j
+                
+            
+        if ind2<=ind1:
+            return False
+        
+        ind1 = ind2
+        a = x[i]
+    
+    return True
+def bckt(x,n,l=[]):
+    if solution(l, n):
+        return [l]
+    else:
+        sol = []
+        for i in x:
+            l = l + [i]
+            if consistent(x,l):
+                print(l)
+                sol = sol + bckt(x, n, l[:])
+            
+            l = l[:-1]
+    return sol
+
+print(bckt([1,2,3,4],2))

@@ -1,0 +1,10 @@
+def getReal(complex):
+    return complex['re']
+def getImag(complex):
+    return complex['im']
+def setReal(complex,re1):
+    complex['re']=re1
+def setImag(complex,im1):
+    complex['im']=im1
+def createComplex(id1,re1,im1):
+    return {'id':id1,'re':re1,'im':im1}

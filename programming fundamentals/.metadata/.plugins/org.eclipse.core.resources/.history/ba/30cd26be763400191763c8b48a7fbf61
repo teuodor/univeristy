@@ -1,0 +1,27 @@
+'''
+Created on 19 Feb 2019
+
+@author: Teuodor
+'''
+def prim(n):
+    if n == 0 or n == 1:
+        return False
+    elif n == 2:
+        return True
+    elif n % 2 == 0:
+        return False
+    else:
+        i = 3
+        while i*i<=n:
+            if n%i == 0:
+                return False
+            i += 2
+            
+    return True
+def list_prime(n):
+    l = []
+    for i in range(n):
+        if prim(i):
+            l.append(i)
+            
+    return l

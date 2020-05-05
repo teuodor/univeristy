@@ -1,0 +1,61 @@
+'''
+Created on 6 Jan 2020
+
+@author: Teuodor
+'''
+'''
+n = input("Numarul de elemente: ")
+l= []
+while True:
+    try:
+        n=int(n)
+        break
+    except:
+        print("Numarul de elemente trebuie sa fie un numar natural. ")
+print("Elementele vor fi:")
+for i in range(n):
+    x = input()
+    l.append(x)
+'''
+def cifra(a,b):
+    l = [0]*10
+    while a != 0:
+        l[a%10] = 1
+        a = a//10
+    while b != 0:
+        if l[b%10] != 0 :
+            return True
+        b = b//10
+    return False          
+
+def consistent(l):
+    for i in range(1,len(l)):
+        if l[i-1]>=l[i]:
+            return False
+        
+def solution(l):
+    for i in range(1,len(l)):
+        if cifra(l[i-1], l[i]) == False:
+            return False
+    
+    return True
+
+def bktRec(nr):
+    l=[]
+    x=[]
+    def bkt(l,nr,x):
+        l.append(-1)
+        for i in range(0,len(nr)):
+            l[-1]=i
+            if consistent(l):
+                if solution(l):
+                    x.append(l)
+                else:
+                    bkt(l[:],nr,x)
+        return x
+    a=bkt(l,nr,x)
+    return x
+    
+    
+for i in bktRec([1223,2342,2122,3422]):
+    print(i)

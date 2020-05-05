@@ -1,0 +1,12 @@
+from ui import *
+def run():
+    v=[]
+    n= input()
+    n=int(n)
+    citireLista(v,n)
+    tiparireElemente1(v)
+    print(v)
+run()
+
+
+

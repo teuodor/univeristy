@@ -1,0 +1,10 @@
+1,Terminator,30,45
+2,Te Iubesc,30,25
+3,Inception,40,25
+4,USer,50,35
+5,Te omor,30,65
+6,Nu cred,32,423
+7,Term,22,22
+8,Film,23,23
+9,Film2,24,24
+10,Film3,25,25

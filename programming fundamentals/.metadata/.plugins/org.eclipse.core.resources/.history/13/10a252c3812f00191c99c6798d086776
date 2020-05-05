@@ -1,0 +1,44 @@
+'''
+Created on 13 Feb 2019
+
+@author: Teuodor
+'''
+from cmath import sqrt
+def prim(n):
+    if n == 0 or n == 1:
+        return False
+    elif n == 2:
+        return True
+    elif n%2 == 0:
+        return False
+    else:
+        for i in range(0,sqrt(n)):
+            if n%i == 0:
+                return False
+            
+    return True
+def solution(l,s):
+    suma = 0
+    for i in l:
+        suma += i
+    if suma == s:
+        return True
+    return False
+def consistent(l,s):
+    suma = 0
+    for i in l:
+        suma += i
+    if suma <= s:
+        return True
+    return False
+def numere_prime(n):
+    l = []
+    for i in range(2,n+1):
+        if prim(i):
+            l.append(i)
+    return l
+def bckt(n):
+    l = numere_prime(n)
+    def rec(n,l,x = []):
+        
+        

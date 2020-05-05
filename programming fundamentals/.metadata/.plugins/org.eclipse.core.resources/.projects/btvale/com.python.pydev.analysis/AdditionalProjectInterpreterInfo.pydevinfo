@@ -1,0 +1,51 @@
+-- VERSION_5
+-- START DISKCACHE_2
+D:\laborator fp\.metadata\.plugins\org.eclipse.core.resources\.projects\btvale\com.python.pydev.analysis\v2_indexcache
+01|1550054546872381000|D:\laborator fp\btvale\01.py
+specs|1549267084024754000|D:\laborator fp\btvale\specs.py
+shutup|1550076576187522000|D:\laborator fp\btvale\shutup.py
+ghita|1578321422821039000|D:\laborator fp\btvale\ghita.py
+sortari|1553416576484333000|D:\laborator fp\btvale\sortari.py
+dealuivale|1549222842849752000|D:\laborator fp\btvale\dealuivale.py
+ca|1549230138829382000|D:\laborator fp\btvale\ca.py
+-- END DISKCACHE
+-- START DICTIONARY
+12
+2=01
+12=shutup
+1=D:\laborator fp\btvale\01.py
+5=D:\laborator fp\btvale\ghita.py
+3=D:\laborator fp\btvale\dealuivale.py
+11=D:\laborator fp\btvale\shutup.py
+6=ghita
+8=sortari
+4=dealuivale
+7=D:\laborator fp\btvale\sortari.py
+10=ca
+9=D:\laborator fp\btvale\ca.py
+-- END DICTIONARY
+-- START TREE 1
+19
+abs|1|abs!1^6#5*18@
+afi|1|afisare!3^14#5*34@
+bck|1|bcktRec!1^21#5*18@
+bkt|3|bktIter!3^68#5*34@bktRec!5^43#5*50@bktRec!3^52#5*34@
+bub|1|bubblesort!7^11#5*66@
+cif|1|cifra!5^20#5*50@
+cmd|1|cmd!3^86#5*35@
+con|3|consistent!3^30#5*34@consistent!1^10#5*18@consistent!5^31#5*50@
+div|1|div_imp_prime!9^19#5*82@
+ins|1|insertionsort!7^32#5*66@
+int|1|interclasare!7^41#5*66@
+l|2|l!11^6#1*99@l!3^2#1*35@
+mer|1|mergesort!7^60#5*66@
+n|1|n!3^1#1*35@
+pri|1|prime!9^6#5*82@
+qui|1|quicksort!7^1#5*66@
+sel|2|selectionsort!7^23#5*66@selectionSort!7^69#5*66@
+sol|4|solution!3^25#5*34@solutionFound!3^19#5*34@solution!1^17#5*18@solution!5^36#5*50@
+x|1|x!3^11#5*35@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

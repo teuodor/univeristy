@@ -1,0 +1,12 @@
+'''
+Created on 4 Dec 2018
+
+@author: Teuodor
+'''
+import csv
+fileName='persons.csv'
+accesMode='r'
+with open(fileName,accesMode) as persons:
+    list = csv.reader(persons)
+    for k in list:
+        print(k)

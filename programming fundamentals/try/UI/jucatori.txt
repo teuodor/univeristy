@@ -1,0 +1,10 @@
+Gediminas,Navickias,Fundas,200
+Nicolae,Iorga,Extrema,300
+Facem,cumfacem,Pivot,220
+Nu,Trebuie,Extrema,250
+Tedoresc,denusepoate,Fundas,222
+Iorga,Nicolae,Fundas,201
+Padureanu,Stefan,Extrema,232
+Danescu,Theodor,Pivot,226
+Dumitrascu,Vlad,Extrema,255
+Teodorescu,Iustin,Fundas,242

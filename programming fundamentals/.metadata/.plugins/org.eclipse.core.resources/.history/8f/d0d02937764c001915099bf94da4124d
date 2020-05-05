@@ -1,0 +1,106 @@
+'''
+Created on 22 Mar 2019
+
+@author: Teuodor
+'''
+
+class Colectie:
+    
+    #construieste o colectie noua
+    def __init__(self):
+        self.__perechi = []
+    
+    #adauga un element in colectie
+    def adauga(self, e):
+        ok = 1
+        for i in self.__perechi:
+            if e == i[0] :
+                i[1] += 1
+                ok = 0
+                break
+        
+        if(ok):
+            self.__perechi.append([e,1])
+            
+    #sterge o aparitie a elementului e din colectie
+    #returneaza True daca elementul a fost sters, False altfel (daca e nu era in colectie)
+    def sterge(self, e):
+        ok = 0
+        for i in self.__perechi:
+            if e == i[0] :
+                i[1] -= 1
+                if i[1] == 0:
+                    self.__perechi.remove(i)
+                ok = 1
+                
+        if ok == 0:
+            return False
+        return True
+                
+    
+    #cauta un element e in colectie
+    #returneaza True daca e apartine colectiei, False altfel
+    def cauta(self, e):
+        for i in self.__perechi:
+            if e == i[0] :
+                return True
+            
+        return False
+    
+    #numara de cate ori apare un element e in colectie
+    #returneaza numarul de aparitii pentru e
+    def nrAparitii(self, e):
+        for i in self.__perechi:
+            if e == i[0] :
+                return i[1]
+            
+        return 0
+    
+    #returneaza dimensiunea colectiei (numarul de elemente)
+    def dim(self):
+        s = 0
+        
+        for i in self.__perechi:
+            s += i[1]
+            
+        return s
+    
+    #returneaza True daca colectia e vida, False altfel
+    def vida(self):
+        if len(self.__perechi) == 0:
+            return True
+        return False
+    
+    #returneaza un IteratorColectie pentru colectie
+    def iterator(self):
+        return IteratorColectie(self)
+    
+    
+class IteratorColectie:
+    
+    #creeaza un iterator pentru colectia c
+    def __init__(self, c):
+        self.__c = c
+        self.__curent = 0
+        self.__frecv_curenta = 1
+    
+    #returneaza True daca iteratorul este valid, False altfel
+    def valid(self):
+        return self.__curent < len(self.__c.__perechi)
+    
+    #returneaza elementul curent din iterator
+    def element(self):
+        if self.valid() == False:
+            raise ValueError()
+        return self.__c.__perechi[self.__curent][0]
+    
+    #muta iteratorul la urmatorul element
+    def urmator(self):
+        if self.valid() == False:
+            raise ValueError()
+        self.__curent += 1
+    
+    #seteaza iteratorul la primul element
+    def prim(self):
+        self.__curent = 0
+        self.__frecv_curenta = 0

@@ -1,0 +1,12 @@
+'''
+Created on 4 Feb 2019
+
+@author: Teuodor
+'''
+from Repository.RepoTV import RepoTvFile
+from Service.ServiceTV import ServiceTv
+class test_service:
+    def test(self):
+        repo = RepoTvFile()
+        serv = ServiceTv(repo)
+        

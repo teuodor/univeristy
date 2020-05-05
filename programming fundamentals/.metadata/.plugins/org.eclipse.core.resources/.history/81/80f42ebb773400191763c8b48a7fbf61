@@ -1,0 +1,61 @@
+'''
+Created on 19 Feb 2019
+
+@author: Teuodor
+'''
+def prim(n):
+    if n == 0 or n == 1:
+        return False
+    elif n == 2:
+        return True
+    elif n % 2 == 0:
+        return False
+    else:
+        i = 3
+        while i*i<=n:
+            if n%i == 0:
+                return False
+            i += 2
+            
+    return True
+def list_prime(n):
+    l = []
+    for i in range(n):
+        if prim(i):
+            l.append(i)
+            
+    return l
+def consistent(l,n):
+    suma = 0
+    for i in l:
+        suma += i
+    if suma <= n:
+        return True
+    return False
+def solution(l,n):
+    suma = 0
+    for i in l:
+        suma += i
+    if suma == n:
+        return True
+    return False
+def bckt(n):
+    l = list_prime(n)
+    nr = []
+    def rec(n,l,nr):
+        if solution(nr,n):
+            return [nr]
+        else:
+            sol = []
+            for i in l:
+                nr.append(i)
+                if consistent(nr,n):
+                    sol = sol + rec(n,l,nr[:])
+                
+                nr = nr[:-1]
+                
+        return sol
+    return rec(n,l,nr)
+
+    
+print(bckt(15))

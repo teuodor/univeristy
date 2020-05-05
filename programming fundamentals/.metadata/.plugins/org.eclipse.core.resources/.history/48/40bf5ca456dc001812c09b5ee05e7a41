@@ -1,0 +1,57 @@
+from getset import *
+from functionalitati import modul, adaugaLista
+def formaComplex(a):
+    '''
+    Functia returneaza un numar complex in forma sa naturala
+    '''
+    c=getReal(a)
+    d=getImag(a)
+    return str(c)+'+'+str(d)+'i'
+def afisareLista(lista):
+    '''
+    Functia afiseaza lista
+    '''
+    s=''
+    for k in range(len(lista)):
+        s+=formaComplex(lista[k])+', '
+    print(s)
+def afisareImaginar(lista):
+    '''
+    Functia afiseaza toate partile imaginare ale elementelor din lista
+    '''
+    a=''
+    for k in range(len(lista)):
+        a+=str(getImag(lista[k]))+' '
+def tiparireElemente1(lista):
+    '''
+    Tipareste toate elementele din lista care au modulul mai mic ca 10
+    '''
+    s=''
+    for k in range(len(lista)):
+        if modul(lista[k])<10:
+            s+=formaComplex(lista[k])+', '
+    print(s)
+
+def tiparireElemente2(lista):
+    '''
+    Tipareste toate elementele din lista care au modulul egal cu 10
+    '''
+    s=''
+    for k in range(len(lista)):
+        if modul(lista[k])==10:
+            s+=formaComplex(lista[k])+', '
+    print(s)
+def tiparireElementeDesc(lista):
+    '''
+    Tipareste elementele in ordine descrescatoare dupa partea lor imaginara
+    '''
+    for a in range(len(lista)-1):
+        for b in range(len(lista)):
+            if getImag(lista[a])<getImag(lista[b]):
+                aux=a
+                a=b
+                b=aux
+    s=''
+    for k in range(len(lista)):
+        s+=formaComplex(lista[k])+', '
+    print(s)

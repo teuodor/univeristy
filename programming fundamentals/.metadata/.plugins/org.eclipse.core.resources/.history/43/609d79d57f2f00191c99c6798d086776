@@ -1,0 +1,19 @@
+'''
+Created on 13 Feb 2019
+
+@author: Teuodor
+'''
+def solution(l,s):
+    suma = 0
+    for i in l:
+        suma += i
+    if suma == s:
+        return True
+    return False
+def consistent(l,s):
+    suma = 0
+    for i in l:
+        suma += i
+    if suma <= s:
+        return True
+    return False

@@ -1,0 +1,8 @@
+'''
+Created on 4 Dec 2018
+
+@author: Teuodor
+'''
+import time
+t = time.strptime('14:00','%H:%M')
+print(t)
