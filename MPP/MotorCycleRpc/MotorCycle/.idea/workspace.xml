@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f607bd61-d911-4f1f-966a-7e78a3fd8437" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQLite - Moto.db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQLite - Moto.db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQLite - Moto.db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Ytpaodp0Zt0KpMMzBm50XnEWVi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MotorCyclePersistence/src/main/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Teuodor\IdeaProjects\MotorCycle\MotorCyclePersistence\src\main\resources" />
+      <recent name="C:\Users\Teuodor\IdeaProjects\MotorCycle\MotorCycleClient\src\main\resources" />
+      <recent name="C:\Users\Teuodor\IdeaProjects\MotorCycle\MotorCyclePersistence\src\main\java" />
+      <recent name="C:\Users\Teuodor\IdeaProjects\MotorCycle\MotorCycleModel\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Teuodor\IdeaProjects\MotorCycle" />
+      <recent name="C:\Users\Teuodor\IdeaProjects\MotorCycle\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.StartRpcClient">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.Main" />
+      <module name="MotorCycle.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartRpcClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StartRpcClient" />
+      <module name="MotorCycle.MotorCycleClient.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartRpcServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StartRpcServer" />
+      <module name="MotorCycle.MotorCycleServer.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StartRpcServer" />
+        <item itemvalue="Application.StartRpcClient" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:SQLite - Moto.db" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:SQLite - Moto.db" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@1e44543f" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f607bd61-d911-4f1f-966a-7e78a3fd8437" name="Default Changelist" comment="" />
+      <created>1583771810507</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583771810507</updated>
+      <workItem from="1583771813563" duration="1943000" />
+      <workItem from="1583783526270" duration="5432000" />
+      <workItem from="1583802462120" duration="12415000" />
+      <workItem from="1583846207918" duration="984000" />
+      <workItem from="1584985885675" duration="2293000" />
+      <workItem from="1585002704550" duration="4868000" />
+      <workItem from="1585007676989" duration="191000" />
+      <workItem from="1585007915533" duration="4222000" />
+      <workItem from="1585148900224" duration="1707000" />
+      <workItem from="1585160617081" duration="15265000" />
+      <workItem from="1585183441092" duration="401000" />
+      <workItem from="1585186572574" duration="1429000" />
+      <workItem from="1585240733200" duration="8191000" />
+      <workItem from="1585298216007" duration="3404000" />
+      <workItem from="1585572037202" duration="1196000" />
+      <workItem from="1585593928537" duration="1415000" />
+      <workItem from="1585637873077" duration="39960000" />
+      <workItem from="1585760310687" duration="1846000" />
+      <workItem from="1585813760850" duration="5013000" />
+      <workItem from="1585828222564" duration="2168000" />
+      <workItem from="1585906215113" duration="2595000" />
+      <workItem from="1586171131898" duration="20000" />
+      <workItem from="1586178180558" duration="2037000" />
+      <workItem from="1586361854395" duration="5630000" />
+      <workItem from="1586442481082" duration="702000" />
+      <workItem from="1586461272371" duration="1277000" />
+      <workItem from="1587655487258" duration="648000" />
+      <workItem from="1587724259920" duration="8140000" />
+      <workItem from="1587824722739" duration="2165000" />
+      <workItem from="1587903317943" duration="3001000" />
+      <workItem from="1587997980917" duration="790000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Project_Structure" timestamp="1587913431752">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1587913431752" />
+    <state x="361" y="71" key="#SQL_Dialects" timestamp="1585641741773">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#SQL_Dialects/0.0.1536.824@0.0.1536.824" timestamp="1585641741773" />
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585183851298">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1585183851298" />
+    <state x="143" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583785220935">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="143" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1583785220935" />
+    <state x="574" y="113" width="459" height="711" key="#com.intellij.ide.util.MemberChooser" timestamp="1585814248911">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="113" width="459" height="711" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585814248911" />
+    <state x="549" y="139" key="FileChooserDialogImpl" timestamp="1586178299641">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="139" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586178299641" />
+    <state width="1493" height="207" key="GridCell.Tab.0.bottom" timestamp="1585950426260">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585950426260" />
+    <state width="1493" height="207" key="GridCell.Tab.0.center" timestamp="1585950426260">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585950426260" />
+    <state width="1493" height="207" key="GridCell.Tab.0.left" timestamp="1585950426260">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585950426260" />
+    <state width="1493" height="207" key="GridCell.Tab.0.right" timestamp="1585950426260">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585950426260" />
+    <state width="1493" height="203" key="GridCell.Tab.1.bottom" timestamp="1585827414853">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="203" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585827414853" />
+    <state width="1493" height="203" key="GridCell.Tab.1.center" timestamp="1585827414853">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="203" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1585827414853" />
+    <state width="1493" height="203" key="GridCell.Tab.1.left" timestamp="1585827414853">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="203" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1585827414853" />
+    <state width="1493" height="203" key="GridCell.Tab.1.right" timestamp="1585827414853">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="203" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585827414853" />
+    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1583771932245">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1583771932245" />
+    <state x="172" y="38" key="SettingsEditor" timestamp="1585007891331">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="172" y="38" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585007891331" />
+    <state x="251" y="302" width="322" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1583786948414">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="251" y="302" width="322" height="233" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1583786948414" />
+    <state x="349" y="67" key="com.intellij.database.dbimport.ImportDialog" timestamp="1585172032310">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="67" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1585172032310" />
+    <state x="566" y="237" width="403" height="343" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1583773127403">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="566" y="237" width="403" height="343" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.824@0.0.1536.824" timestamp="1583773127403" />
+    <state x="485" y="0" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1583772847319">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="485" y="0" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1583772847319" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1585298283480">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585298283480" />
+    <state x="209" y="24" key="new project wizard" timestamp="1586178915969">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="24" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1586178915969" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1585016069308">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1585016069308" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585004368282">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585004368282" />
+    <state x="671" y="95" key="spring file set editor" timestamp="1584986436315">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="671" y="95" key="spring file set editor/0.0.1536.824@0.0.1536.824" timestamp="1584986436315" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Repository/CompetitorRepository.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MotorCycle$StartRpcServer.ic" NAME="StartRpcServer Coverage Results" MODIFIED="1585760385899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

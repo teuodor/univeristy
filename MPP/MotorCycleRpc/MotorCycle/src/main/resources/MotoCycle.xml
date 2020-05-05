@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:properties id="jdbcProps1">
+        <prop key="tasks.jdbc.driver">org.sqlite.JDBC</prop>
+        <prop key="tasks.jdbc.url">motocycle.jdbc.url=jdbc:sqlite:/Users/Teuodor/IdeaProjects/MotorCycle/Moto.db</prop>
+    </util:properties>
+
+    <util:properties id="jdbcProps" location="classpath:bd.config"/>
+
+    <bean id="val" class="Repository.EventRepository"/>
+
+
+    <bean id="repo" class="Repository.CompetitorRepository">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+
+    <bean id="repo2" class="Repository.CompetitorRepository">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+
+    <bean id="obsTaskRunner" class="Repository.EmployeeRepository">
+        <constructor-arg>
+            <util:properties id="jdbcProps" location="classpath:bd.config"/>
+        </constructor-arg>
+    </bean>
+
+<!--    <bean id="taskService" class="tasks.service.TaskService">-->
+<!--        <constructor-arg ref="repo2"/>-->
+<!--        <constructor-arg ref="obsTaskRunner"/>-->
+<!--    </bean>-->
+
+</beans>
