@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a51ff169-23c2-4b67-aaab-b416ba3308df" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@DESKTOP-SIFAM82" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@DESKTOP-SIFAM82" type="feb32156:DbDataSourceImpl" />
+        <item name="VinylSqlShop: database" type="ccb7ac2a:MsImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@DESKTOP-SIFAM82" type="feb32156:DbDataSourceImpl" />
+        <item name="VinylSqlShop: database" type="ccb7ac2a:MsImplModel$Database" />
+        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/WindowsFormsApp1/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WindowsFormsApp1/App.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WindowsFormsApp1/Form1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5710885-5FA8-448B-ABCB-DC0D657B8A58/a4/dde19e19/Control.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WindowsFormsApp1/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WindowsFormsApp1/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/WindowsFormsApp2/Form2.Designer.cs" />
+        <option value="$PROJECT_DIR$/WindowsFormsApp2/Form1.Designer.cs" />
+        <option value="$PROJECT_DIR$/WindowsFormsApp2/App.config" />
+        <option value="$PROJECT_DIR$/WindowsFormsApp2/Form1.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0e7fa0b4-04c6-4567-a1e8-a2905412b7a2/console_1.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/WindowsFormsApp1/App.config" />
+        <option value="$PROJECT_DIR$/WindowsFormsApp1/Form1.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZzAeKvOYhV4SPNo7QXJxdsMOsi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlserver" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="WindowsFormsApp2" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/WindowsFormsApp1/bin/Debug/WindowsFormsApp1.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WindowsFormsApp1/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/WindowsFormsApp1/WindowsFormsApp1.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.7.2" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@DESKTOP-SIFAM82" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@DESKTOP-SIFAM82" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@6cd669f6" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a51ff169-23c2-4b67-aaab-b416ba3308df" name="Default Changelist" comment="" />
+      <created>1585831643998</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585831643998</updated>
+      <workItem from="1585831647272" duration="1997000" />
+      <workItem from="1585845182348" duration="3898000" />
+      <workItem from="1586112908187" duration="2650000" />
+      <workItem from="1586122967688" duration="6900000" />
+      <workItem from="1586171113620" duration="3803000" />
+      <workItem from="1586201943275" duration="989000" />
+      <workItem from="1586240302804" duration="360000" />
+      <workItem from="1586242889133" duration="1884000" />
+      <workItem from="1586774267754" duration="428000" />
+      <workItem from="1587382899201" duration="2761000" />
+      <workItem from="1587499566217" duration="1376000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state x="453" y="72" key="#WindowsFormsApp2" timestamp="1586125759225">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="453" y="72" key="#WindowsFormsApp2/0.0.1536.824@0.0.1536.824" timestamp="1586125759225" />
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586120975266">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1586120975266" />
+    <state width="1493" height="175" key="GridCell.Tab.0.bottom" timestamp="1586244839177">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="175" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586244839177" />
+    <state width="1493" height="175" key="GridCell.Tab.0.center" timestamp="1586244839177">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="175" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586244839177" />
+    <state width="1493" height="175" key="GridCell.Tab.0.left" timestamp="1586244839176">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="175" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586244839176" />
+    <state width="1493" height="175" key="GridCell.Tab.0.right" timestamp="1586244839177">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="175" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586244839177" />
+    <state width="1493" height="233" key="GridCell.Tab.1.bottom" timestamp="1586182022527">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586182022527" />
+    <state width="1493" height="233" key="GridCell.Tab.1.center" timestamp="1586182022526">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586182022526" />
+    <state width="1493" height="233" key="GridCell.Tab.1.left" timestamp="1586182022526">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586182022526" />
+    <state width="1493" height="233" key="GridCell.Tab.1.right" timestamp="1586182022527">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586182022527" />
+    <state width="1493" height="233" key="GridCell.Tab.2.bottom" timestamp="1586182022528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586182022528" />
+    <state width="1493" height="233" key="GridCell.Tab.2.center" timestamp="1586182022527">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1586182022527" />
+    <state width="1493" height="233" key="GridCell.Tab.2.left" timestamp="1586182022527">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1586182022527" />
+    <state width="1493" height="233" key="GridCell.Tab.2.right" timestamp="1586182022527">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1586182022527" />
+    <state width="1493" height="233" key="GridCell.Tab.3.bottom" timestamp="1586182022528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586182022528" />
+    <state width="1493" height="233" key="GridCell.Tab.3.center" timestamp="1586182022528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1586182022528" />
+    <state width="1493" height="233" key="GridCell.Tab.3.left" timestamp="1586182022528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1586182022528" />
+    <state width="1493" height="233" key="GridCell.Tab.3.right" timestamp="1586182022528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1586182022528" />
+    <state width="1493" height="233" key="GridCell.Tab.4.bottom" timestamp="1586182022528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586182022528" />
+    <state width="1493" height="233" key="GridCell.Tab.4.center" timestamp="1586182022528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1586182022528" />
+    <state width="1493" height="233" key="GridCell.Tab.4.left" timestamp="1586182022528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1586182022528" />
+    <state width="1493" height="233" key="GridCell.Tab.4.right" timestamp="1586182022528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="233" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1586182022528" />
+    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1586121009673">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1586121009673" />
+    <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size" timestamp="1587386265450">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824@0.0.1536.824" timestamp="1587386265450" />
+    <state x="490" y="154" width="540" height="524" key="StructurePopup" timestamp="1587382931987">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="490" y="154" width="540" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1587382931987" />
+    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1586128773213">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1586128773213" />
+    <state x="349" y="67" key="com.intellij.database.dbimport.ImportDialog" timestamp="1585849543702">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="67" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1585849543702" />
+    <state x="566" y="237" width="403" height="347" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1585849880263">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="566" y="237" width="403" height="347" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.824@0.0.1536.824" timestamp="1585849880263" />
+    <state x="714" y="71" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1587382944857">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="714" y="71" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1587382944857" />
+    <state x="631" y="125" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1586120920462">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="631" y="125" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.824@0.0.1536.824" timestamp="1586120920462" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586125567706">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1586125567706" />
+  </component>
+</project>
