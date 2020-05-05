@@ -1,0 +1,10 @@
+rootProject.name = 'MotorCycle'
+
+include 'MotorCycleModel'
+include 'MotorCyclePersistence'
+include 'MotorCycleServices'
+include 'MotorCycleNetworking'
+include 'MotoCycleModel'
+include 'MotorCycleClient'
+include 'MotorCycleServer'
+
