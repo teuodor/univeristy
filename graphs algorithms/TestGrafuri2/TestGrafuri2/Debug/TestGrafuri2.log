@@ -1,0 +1,4 @@
+﻿  Huffman.cpp
+d:\algoritmicagrafurilor\testgrafuri2\testgrafuri2\huffman.cpp(31): warning C4101: 'frecvente': unreferenced local variable
+d:\algoritmicagrafurilor\testgrafuri2\testgrafuri2\huffman.cpp(45): warning C4018: '<': signed/unsigned mismatch
+  TestGrafuri2.vcxproj -> D:\AlgoritmicaGrafurilor\TestGrafuri2\Debug\TestGrafuri2.exe
