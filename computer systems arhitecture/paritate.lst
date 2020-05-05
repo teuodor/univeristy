@@ -1,0 +1,13 @@
+     1                                  bits 32
+     2                                  global _paritate
+     3                                  segment code public code use32
+     4                                  _paritate:
+     5 00000000 55                      	push ebp
+     6 00000001 89E5                    	mov ebp,esp
+     7                                      
+     8 00000003 8B4508                      mov eax,[ebp+8]
+     9 00000006 83E001                      and eax, 1
+    10 00000009 F7D0                        not eax
+    11                                      
+    12 0000000B 5D                      	pop ebp
+    13 0000000C C3                          ret

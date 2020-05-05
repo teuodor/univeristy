@@ -1,0 +1,53 @@
+     1                                  bits 32
+     2                                  
+     3                                  global secventa_maxima
+     4                                  segment code use32 public class=data
+     5 00000000 02                      a db 2
+     6                                  segment code use32 public class=code
+     7                                      secventa_maxima:
+     8 00000001 8B742404                    mov esi,[esp+4]
+     9                                      
+    10 00000005 BB00000000                  mov ebx,0
+    11 0000000A BA00000000                  mov edx,0
+    12                                      bucla:
+    13 0000000F 8B442410                        mov eax,[esp+16]
+    14 00000013 3B10                            cmp edx,[eax]
+    15 00000015 720E                            jb nu
+    16 00000017 8B44240C                        mov eax,[esp+12]    ;esp+16:= lungime, esp+12:= index
+    17 0000001B 8918                            mov [eax],ebx
+    18 0000001D 2910                            sub [eax],edx
+    19 0000001F 8B442410                        mov eax,[esp+16]
+    20 00000023 8910                            mov [eax],edx
+    21                                          
+    22                                          
+    23                                          nu:
+    24 00000025 66B80000                        mov ax,0
+    25 00000029 8A041E                          mov al,[esi+ebx]        
+    26 0000002C F635[00000000]                  div byte[a]
+    27 00000032 80FC01                          cmp ah,1
+    28 00000035 7402                            je impar
+    29 00000037 7503                            jne par
+    30                                          
+    31                                          impar:
+    32 00000039 42                              inc edx
+    33 0000003A EB05                            jmp conditie_iesire
+    34                                          
+    35                                          
+    36                                          par:
+    37 0000003C BA00000000                      mov edx,0
+    38                                          
+    39                                          conditie_iesire:
+    40 00000041 43                              inc ebx
+    41 00000042 8B442408                        mov eax,[esp+8]
+    42 00000046 3B18                            cmp ebx,[eax]
+    43 00000048 7402                            je final
+    44 0000004A EBC3                            jmp bucla
+    45                                       
+    46                                       
+    47                                       
+    48                                      final:
+    49 0000004C C3                          ret
+    50                                      
+    51                                          
+    52                                          
+    53                                      

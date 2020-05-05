@@ -1,0 +1,79 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit        
+     8                                  extern fopen, fprintf, fclose, scanf, minim
+     9                                  import fopen msvcrt.dll
+    10                                  import fprintf msvcrt.dll
+    11                                  import fclose msvcrt.dll
+    12                                  import scanf msvcrt.dll       ; tell nasm that exit exists even if we won't be defining it
+    13                                  
+    14                                  
+    15                                  
+    16                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    17                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    18                                  
+    19                                  ; our data is declared here (the variables needed by our program)
+    20                                  segment data use32 public class=data
+    21                                      ; ...
+    22 00000000 00<rept>                    sir times 50*4 db 0
+    23 000000C8 256400                      format_citire db '%d',0
+    24 000000CB 257800                      format_print db '%x',0
+    25 000000CE 7700                        mod_acces db 'w',0
+    26 000000D0 6D696E2E74787400            nume_fisier db 'min.txt',0
+    27 000000D8 FFFFFFFF                    descriptor_fisier dd -1
+    28                                  ; our code starts here
+    29                                  segment code use32 public class=code
+    30                                      start:
+    31                                          ; ...
+    32 00000000 B8[00000000]                    mov eax,sir
+    33 00000005 B900000000                      mov ecx,0
+    34 0000000A 83E804                          sub eax,4
+    35                                          
+    36                                          continua:
+    37 0000000D 41                                  inc ecx
+    38 0000000E 83C004                              add eax,4
+    39 00000011 60                                  pushad
+    40                                              
+    41 00000012 50                                  push eax
+    42 00000013 68[C8000000]                        push dword format_citire
+    43 00000018 FF15[00000000]                      call [scanf]
+    44 0000001E 83C408                              add esp,4*2
+    45                                              
+    46 00000021 61                                  popad
+    47                                              
+    48 00000022 833800                          cmp dword[eax],0
+    49 00000025 75E6                            jne continua
+    50                                          
+    51 00000027 49                          dec ecx
+    52                                      
+    53                                      
+    54 00000028 51                              push dword ecx
+    55 00000029 68[00000000]                    push dword sir
+    56 0000002E E8(00000000)                    call minim
+    57                                          
+    58 00000033 68[CE000000]                    push dword mod_acces
+    59 00000038 68[D0000000]                    push dword nume_fisier
+    60 0000003D FF15[00000000]                  call [fopen]
+    61 00000043 83C408                          add esp,4*2
+    62                                          
+    63 00000046 A3[D8000000]                    mov [descriptor_fisier],eax
+    64 0000004B 83F800                          cmp eax,0
+    65 0000004E 7415                            je final
+    66                                          
+    67 00000050 53                              push dword ebx
+    68 00000051 68[CB000000]                    push dword format_print
+    69 00000056 FF35[D8000000]                  push dword [descriptor_fisier]
+    70 0000005C FF15[00000000]                  call [fprintf]
+    71 00000062 83C40C                          add esp,4*3
+    72                                          
+    73                                          
+    74                                          
+    75                                          ; exit(0)
+    76                                      final:
+    77                                      
+    78 00000065 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    79 00000067 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

@@ -1,0 +1,102 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit,scanf,fscanf,fprintf,fopen,fclose,printf        ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll  
+     9                                  import scanf msvcrt.dll
+    10                                  import fscanf msvcrt.dll
+    11                                  import fprintf msvcrt.dll  ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    12                                  import fopen msvcrt.dll
+    13                                  import fclose msvcrt.dll              ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    14                                  import printf msvcrt.dll
+    15                                  ; our data is declared here (the variables needed by our program)
+    16                                  segment data use32 class=data
+    17                                      ; ...
+    18 00000000 257300                  format_siruri db '%s',0
+    19 00000003 256300                  format_caracter db '%c',0
+    20 00000006 25732000                format_afisare db '%s ',0
+    21 0000000A <res 0000000A>          nume_input resb 10
+    22 00000014 6F75747075742E7478-     nume_output db 'output.txt',0
+    22 0000001D 7400               
+    23 0000001F FFFFFFFF                descriptor_input dd -1
+    24 00000023 FFFFFFFF                descriptor_output dd -1
+    25 00000027 <res 00000004>          c resd 1
+    26 0000002B 7700                    mod_scris db 'w',0
+    27 0000002D 7200                    mod_citire db 'r',0
+    28 0000002F <res 00000014>          cuvant resb 20
+    29                                  ; our code starts here
+    30                                  segment code use32 class=code
+    31                                      start:
+    32                                          ; ...
+    33                                          
+    34 00000000 68[0A000000]                push dword nume_input
+    35 00000005 68[00000000]                push dword format_siruri
+    36 0000000A FF15[00000000]              call [scanf]
+    37 00000010 83C408                      add esp,8
+    38                                      
+    39 00000013 68[27000000]                push dword c
+    40 00000018 68[03000000]                push dword format_caracter
+    41 0000001D FF15[00000000]              call [scanf]
+    42 00000023 83C408                      add esp,8
+    43                                      
+    44 00000026 68[2D000000]                push dword mod_citire
+    45 0000002B 68[0A000000]                push dword nume_input
+    46 00000030 FF15[00000000]              call [fopen]
+    47 00000036 83C408                      add esp,8
+    48                                      
+    49                                      
+    50 00000039 A3[1F000000]                mov [descriptor_input],eax
+    51                                      
+    52 0000003E 68[2B000000]                push dword mod_scris
+    53 00000043 68[14000000]                push dword nume_output
+    54 00000048 FF15[00000000]              call [fopen]
+    55                                      
+    56 0000004E A3[23000000]                mov [descriptor_output],eax
+    57                                      
+    58                                      citire_cuvinte:
+    59 00000053 68[2F000000]                push dword cuvant
+    60 00000058 68[00000000]                push dword format_siruri
+    61 0000005D FF35[1F000000]              push dword [descriptor_input]
+    62 00000063 FF15[00000000]              call [fscanf]
+    63                                      
+    64 00000069 803D[2F000000]0A            cmp [cuvant], byte 10
+    65 00000070 743C                        je final
+    66                                      
+    67 00000072 BA00000000                  mov edx,0
+    68                                      numar_litere:
+    69 00000077 8A82[2F000000]              mov al,[cuvant+edx]
+    70 0000007D 42                          inc edx
+    71 0000007E 3C00                        cmp al,0
+    72 00000080 75F5                        jne numar_litere
+    73                                      
+    74                                      
+    75 00000082 83EA02                      sub edx,2
+    76 00000085 8A82[2F000000]              mov al,[cuvant+edx]
+    77 0000008B B900000000                  mov ecx,0
+    78 00000090 3A05[27000000]              cmp al,[c]
+    79 00000096 7400                        je afisare
+    80                                     
+    81                                      
+    82                                      afisare:
+    83 00000098 68[2F000000]                push dword cuvant
+    84 0000009D 68[06000000]                push dword format_afisare
+    85 000000A2 FF35[23000000]              push dword [descriptor_output]
+    86 000000A8 FF15[00000000]              call [fprintf]
+    87                                      
+    88                                      
+    89                                     
+    90                                      
+    91                                     
+    92                                      final:
+    93 000000AE FF35[1F000000]              push dword [descriptor_input]
+    94 000000B4 FF15[00000000]              call [fclose]
+    95                                      
+    96 000000BA FF35[23000000]              push dword [descriptor_output]
+    97 000000C0 FF15[00000000]              call [fclose]
+    98                                      
+    99                                          ; exit(0)
+   100 000000C6 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   101 000000C8 FF15[00000000]                  call    [exit]       ; call exit to terminate the program
