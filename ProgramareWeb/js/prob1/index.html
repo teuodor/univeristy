@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problema 1</title>
+    </head>
+    <body>
+        <select size="8" ondblclick="move(this.value)" id = "list1">
+            <option id = "Mihai" value="Mihai">Mihai</option>
+            <option id = "Teodor" value="Teodor">Teodor</option>
+            <option id = "Radu" value="Radu">Radu</option>
+            <option id = "Sandrino" value="Sandrino">Sandrino</option>
+        </select>
+        <select size = "8" ondblclick="move(this.value)" id = "list2">
+            <option id = "Chris" value="Chris">Chris</option>
+            <option id = "Mada" value="Mada">Mada</option>
+            <option id = "Zai" value="Zai">Zai</option>
+            <option id = "Tani" value="Tani">Tani</option>
+        </select>
+        <script type = "text/javascript">
+            function move(a){
+                console.log(document.getElementById(a))
+                var parentList = document.getElementById(a).parentElement
+                var child = document.getElementById(a)
+                if(parentList.id == "list1"){
+                    document.getElementById("list2").appendChild(child);
+                }
+                else if(parentList.id == "list2"){
+                    document.getElementById("list1").appendChild(child);
+                }
+            }
+        </script>
+    </body>
+</html>

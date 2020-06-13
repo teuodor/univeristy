@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Problema 4 orizontal
+    </title>
+    <body>
+        <table id = "table">
+            <style>
+                 table {
+                    border-collapse: collapse;
+                }
+
+                table, th, td{
+                    border: 1px solid black;
+                }
+
+                th, td{
+                    text-align: center;
+                }
+            </style>
+            <tr>
+                <th onclick="sort(0)">Fructe</th>
+                <th onclick="sort(1)">Cantitate</th>
+                <th onclick="sort(2)">Pret</th>
+            </tr>
+        </table>
+        <script>
+            var list = [["mere", "pere"], [2, 3],[24, 15]]
+            var first = false
+            var click = []
+            
+            function initialize(){
+                click.length[0] = list.length
+                for(i = 0; i < click.length; i++)
+                    click[i] = false
+                first = true
+            }
+
+            function populate(){
+                var table = document.getElementById("table")
+                
+                if(first){
+                    i = list[0].length
+                    while(i--){
+                        table.deleteRow(i+1)
+                    }
+                }
+
+                for(i = 0; i < list[0].length; i++){
+                    var row = table.insertRow()
+                    for(j = list.length - 1; j >= 0; j--){
+                        var x = row.insertCell(0)
+                        x.innerHTML = list[j][i]
+                    }
+                }
+            }
+            populate()
+            initialize()
+
+            function sort(nr){
+                click[nr] = !click[nr]
+                for(i = 0; i < list[nr].length - 1; i++)
+                        for(j = i + 1; j < list[nr].length; j++){
+                            if((list[nr][i] > list[nr][j]) == click[nr]){
+                                for(k = 0; k < list.length; k ++)
+                                    list[k][i] = [list[k][j], list[k][j] = list[k][i]][0];
+                            } 
+                        }
+                    populate()
+            }
+        </script>
+    </body>
+</html>

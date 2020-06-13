@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul{
+                list-style: none;
+            }
+            li{
+                margin-top: 10px;
+            }
+            .notValid{
+                border: solid red;
+            }
+            </style>
+        <title>Problema 2</title>
+    </head>
+    <body>
+        <form>
+            <ul list-style =>
+                <li><span id = "Name">Name: </span> <input type="text" id = "name_txt" name = "name"></li>
+                <li><span id = "Date">Data nasterii(dd/mm/yyyy): </span><input type="text" id = "date_txt" name = "date"></li>
+                <li><span id = "Age">Varsta: </span> <input type="text" id = "age_txt" name = "age"> </li>
+                <li><span id = "Email">Email: </span><input type="text" id = "email_txt" name = "email"></li>
+                <li><input type="button" id = "submit_btn" name = "submit" value="Trimite" onclick="validate()"></li>
+            </ul>
+        </form>
+        <script>
+            function validate(){
+                var name_txt = document.getElementById("name_txt")
+                var date_txt = document.getElementById("date_txt")
+                var age_txt = document.getElementById("age_txt")
+                var email_txt = document.getElementById("email_txt")
+            
+                var Name = document.getElementById("Name")
+                var Date = document.getElementById("Date")
+                var Age = document.getElementById("Age")
+                var Email = document.getElementById("Email")
+
+                var name = name_txt.value
+                var date = date_txt.value
+                var age = age_txt.value
+                var email = email_txt.value
+
+                var alert_begin = "Campurile " 
+                var fields = ""
+                var alert_end = " nu sunt completate corespunzator"
+
+                var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+                if(name === ""){
+                    fields = fields.concat("nume, ")
+                    Name.classList.add("notValid")
+                }       
+                else{
+                    Name.classList.remove("notValid")
+                }
+                
+                if(isNaN(age) || age === ""){
+                    fields = fields.concat("varsta, ")
+                    Age.classList.add("notValid")
+                }
+                else{
+                    Age.classList.remove("notValid")
+                }
+
+                if(date === ""){
+                    fields = fields.concat("data, ")
+                    Date.classList.add("notValid")
+                }
+                else{
+                    var date_fields = date.split("/");
+                    if(date_fields.length == 3){
+                        for(i = 0; i < date_fields.length; i++)
+                            if(isNaN(date_fields[i])){
+                                fields = fields.concat("data, ")
+                                Date.classList.add("notValid")
+                                break
+                            }
+                            Date.classList.remove("notValid")
+                    }
+                    else{
+                        Date.classList.add("notValid")
+                        fields = fields.concat("data, ")
+                    }
+                }
+
+                if(!email.match(mailformat)){
+                    Email.classList.add("notValid")
+                    fields = fields.concat("email, ")
+                }
+                else{
+                    Email.classList.remove("notValid")
+                }
+
+                if(fields != ""){
+                    fields.substring(0, fields.length - 2)
+                    alert(alert_begin + fields + alert_end);
+                }
+                else{
+                    alert("Datele sunt completate corect!!!")
+                }
+            }
+        </script>
+    </body>
+</html>

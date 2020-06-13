@@ -1,0 +1,13 @@
+ul{
+    width: fit-content;
+    background: darkcyan;
+}
+
+li{
+    display: flex;
+    margin: 30px;
+}
+
+p{
+    color: darkgrey;
+}

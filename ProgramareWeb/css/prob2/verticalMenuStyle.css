@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+header, footer, #content{
+    height: 220px;
+    font-size: 50px;
+}
+
+header{
+    background-color: lightblue;
+}
+
+#content{
+    background-color: lightgreen;
+    min-height: 440px;
+}
+
+footer{
+    background-color: lightskyblue;
+}
+
+#menu{
+    float: left;
+    height: 400px;
+}
+
+li{
+    display: block;
+    text-align: center;
+    padding: 0px 20px;
+    font-size: 25px;
+    border-bottom: 1px solid black;
+}
+
+ul{
+    background-color: lightseagreen;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width:220px;
+    height: 440px;
+    list-style-type: none;
+}
+
+li:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}

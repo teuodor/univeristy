@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Problema 4 vertical
+        </title>
+        <body>
+            <style>
+                table {
+                    border-collapse: collapse;
+                }
+
+                table td{
+                    border: 1px solid black;
+                }
+            </style>
+            <table id="table">
+                <tr><td><span onclick="sort(0)"><b>Fructe</b></span></td></tr>
+                <tr><td><span onclick="sort(1)"><b>Pret</b></span></td></tr>
+                <tr><td><span onclick="sort(1)"><b>Cantitate</b></span></td></tr>
+            </table>
+            <script>
+                var list = [["mere", "pere"], [2, 3], [24, 15]]
+                var first = false
+                var firstClick = []
+                
+                function initialize(){
+                    firstClick.length = list.length
+                    for(i = 0; i < firstClick.length; i++)
+                        firstClick[i] = false
+                    first = true
+                }
+
+                function populate(){
+                    var table = document.getElementById("table")
+                    if(first)
+                    for(i = 0; i < table.rows.length; i++)
+                        for(j = 1; j <list[i].length + 1; j++)
+                            table.rows[i].deleteCell(1)
+                    
+                    for(i = 0; i < list.length; i++){
+                        for(j = 0; j < list[i].length; j++){
+                            var x = table.rows[i].insertCell(table.rows[i].cells.length)
+                            x = x.innerHTML = list[i][j]
+                        }
+                    }
+                }
+
+                populate()
+                initialize()
+
+                function sort(nr){
+                    firstClick[nr] = !firstClick[nr]
+                    for(i = 0; i < list[nr].length - 1; i++)
+                        for(j = i + 1; j < list[nr].length; j++){
+                            if((list[nr][i] > list[nr][j]) == firstClick[nr]){
+                                for(k = 0; k < list.length; k ++)
+                                    list[k][i] = [list[k][j], list[k][j] = list[k][i]][0];
+                            } 
+                        }
+                    populate()
+                }
+            </script>
+        </body>
+    </head>
+</html>

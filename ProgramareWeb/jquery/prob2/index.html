@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul{
+                list-style: none;
+            }
+            li{
+                margin-top: 10px;
+            }
+            .notValid{
+                border: solid red;
+            }
+        </style>
+        <title>Problema 2</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <form>
+            <ul list-style =>
+                <li><span id = "Name">Name: </span> <input type="text" id = "name_txt" name = "name"></li>
+                <li><span id = "Date">Data nasterii(dd/mm/yyyy): </span><input type="text" id = "date_txt" name = "date"></li>
+                <li><span id = "Age">Varsta: </span> <input type="text" id = "age_txt" name = "age"> </li>
+                <li><span id = "Email">Email: </span><input type="text" id = "email_txt" name = "email"></li>
+                <li><input type="button" id = "submit_btn" name = "submit" value="Trimite" onclick="validate()"></li>
+            </ul>
+        </form>
+    </body>
+</html>

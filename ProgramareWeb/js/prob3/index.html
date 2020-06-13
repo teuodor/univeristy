@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Problema 3
+        </title>
+    </head>
+    <body>
+        <table>
+            <style>
+                .hidden{
+                    filter: opacity(0%);
+                }
+                table, td{
+                    border: 1px solid black;
+                }
+            </style>
+            <tr>
+                <td><img src = "https://via.placeholder.com/150/350034/000000/?text=radu" class = "hidden" onclick =" memory_game(this)"></td>
+                <td><img src="https://via.placeholder.com/150/00aa20/000000/?text=mihai" class = "hidden" onclick = "memory_game(this)"></td>
+                <td><img src="https://via.placeholder.com/150/343500/000000/?text=cristi" class = "hidden" onclick = "memory_game(this)"></td>
+                <td><img src="https://via.placeholder.com/150/593001/703310/?text=tani" class = "hidden" onclick = "memory_game(this)"></td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/150/593001/703310/?text=tani" class = "hidden" onclick = "memory_game(this)"></td>
+                <td><img src="https://via.placeholder.com/150/00aa20/000000/?text=mihai" class = "hidden" onclick = "memory_game(this)"></td>
+                <td><img src="https://via.placeholder.com/150/DAA520/000000/?text=teodor" class = "hidden" onclick = "memory_game(this)"></td>
+                <td><img src="https://via.placeholder.com/150/350034/000000/?text=radu" class = "hidden" onclick = "memory_game(this)"></td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/150/343500/000000/?text=cristi" class = "hidden" onclick = "memory_game(this)"></td>
+                <td><img src="https://via.placeholder.com/150/003534/000000/?text=fici" class = "hidden" onclick = "memory_game(this)"></td>
+                <td><img src="https://via.placeholder.com/150/003534/000000/?text=fici" class = "hidden" onclick = "memory_game(this)"></td>
+                <td><img src="https://via.placeholder.com/150/DAA520/000000/?text=teodor" class = "hidden" onclick = "memory_game(this)"></td>
+            </tr>
+        </table>
+        <script>
+            var first_image = null
+            var second_image = null
+            function memory_game(image){
+                if(!image.classList.contains("hidden"))
+                    return
+                
+                if(first_image === null && second_image === null ){
+                    first_image = image
+                    image.classList.remove("hidden")
+                }
+                else if(first_image != null && second_image === null ){
+                    second_image = image
+                    second_image.classList.remove("hidden")
+                }
+                else if(first_image != null && second_image != null ){
+                    if(first_image.src != second_image.src){
+                        first_image.classList.add("hidden")
+                        second_image.classList.add("hidden")
+                    }
+                    first_image = null
+                    second_image = null
+                    image.classList.remove("hidden")
+                    first_image = image
+                }
+            }
+        </script>
+    </body>
+</html>

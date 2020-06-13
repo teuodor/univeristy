@@ -1,0 +1,16 @@
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    background: darkcyan;
+}
+
+li{
+    flex: 1 1 25%;
+    background: darkgoldenrod;
+    margin: 5%;
+}
+
+p{
+    text-align: center;
+    color: darkgrey;
+}

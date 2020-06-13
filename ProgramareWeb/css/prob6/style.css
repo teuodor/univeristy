@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul{
+    display: inline-block;
+    text-align: right;
+}
+
+
+h4 {
+    
+    display: inline;
+    font-size: 30px;
+}
+
+#firstname,
+#lastname,
+#cnp{
+    margin-top: 20px;
+    height: 40px;
+    width: 303px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    background-image: url(box.png);
+    background-position: 0 -4px;
+    border: 2px solid;
+}

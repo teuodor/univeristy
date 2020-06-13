@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Problema 2
+        </title>
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+
+            table, th, td{
+                border: 1px solid black;
+            }
+
+            th, td{
+                text-align: center;
+                padding: 2px;
+            }
+            #back:disabled, #next:disabled{
+                background-color: cadetblue;
+            }
+            .table_buttons{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .wrapper{
+                width: 50vh;
+            }
+        </style>
+    </head>
+    <body>
+    <form action="index.php" method="get">
+        <input type="text" name="number">
+        <input type="submit" name = "submit">
+    </form>
+    <div class = "wrapper">
+        <table>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Phone number</th>
+                <th>Email</th>
+            </tr>
+        </table>
+        <div class = "table_buttons">
+            <input type="button" value="<" disabled onclick="backward()" id ="back">
+            <input type = "button" value=">" onclick="forward()" id = "next">
+        </div>
+    </div>
+    </body>
+</html>

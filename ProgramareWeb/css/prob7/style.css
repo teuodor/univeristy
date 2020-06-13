@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+ }
+
+ li{
+    width:100px;
+
+}
+ul{
+    margin-left: 200px;
+}
+
+ul li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.alice{
+    list-style-image: url(hand.jfif);
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    background-color: aquamarine;
+}
+
+.bob{
+    list-style-image: url(happy.png);
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    background-color: cadetblue;
+}

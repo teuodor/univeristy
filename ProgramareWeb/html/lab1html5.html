@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ro">
+    <head>
+        <title> Formular electric castle </title>
+    </head>
+    <body>
+        <a href="https://electriccastle.ro/" target="_blank"><img alt = "electriccastle" src = "https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/1263457/1263457-1544620106062-72cd87f96befd.jpg" width="150" height = "150"></a>
+        
+            <h1>Experienta electric castle</h1>
+            <div><b>Formular:</b></div><br>
+            <form id = "form-feedback" action="D://teo/ProgramareWeb/confirm.html">
+                <table id = "table-feedback" > 
+                    <thead>
+                        <tr>
+                            <th><b>Formular electric castle</b>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table id = "pers-info-table">
+                                    <tr>
+                                    <th colspan ="2"><b>Date personale :</b></th>
+                                    
+                                    <tbody>
+                                        <tr>
+                                            <td>Nume: 
+                                            <td><input type="text" name=lastname size="50" maxlength=20></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Prenume: </td>
+                                            <td><input type=text name=firstname size=50 maxlength="20">
+                                        </tr>
+                                        <tr>
+                                            <td>Sex: </td>
+                                            <td><select name = "gender">
+                                                    <option value = "male"> B&#259;rbat </option>
+                                                    <option value = "female"> Femeie </option>
+                                                    <option value = "other" selected> Alt </option>
+                                            </select></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Porecl&#259;: 
+                                            <td><input type="text" name = "nickname" size = "100" maxlength="20" disabled>
+                                        </tr>
+                                        <tr>
+                                            <td>Adres&#259;: </td>
+                                            <td><input type="text" size=100 name = "adress" maxlength=50>
+                                        </tr>
+                                        <tr>
+                                            <td>Jude&#355; :</td>
+                                            <td><input type = "text" size ="50" maxlength=20></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ora&#351; :
+                                            <td><input type = "text" size = "50" name=city maxlength="20"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>&#354;ara
+                                            <td><input type = "text" size ="50" maxlength=20 value = "Romania" readonly></td>
+                                        
+                                        <tr>
+                                            <td>Email: 
+                                            <td><input type=text size = "100" name = "email" maxlength="30"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Telefon: 
+                                            <td><input type = "text" size="100" name = "phone" maxlength="15"></td>
+                                        
+                                    </tbody>
+                                </table>
+                            
+                        
+                        <tr>
+                            <td>
+                                <fieldset>
+                                    <legend><b>	&#206;ntreb&#259;ri legate de electric castle 2019: </b></legend>
+                                    <table id=experiencequestions>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <ol type="a">
+                                                        <li>Care a fost impresia l&#259;sat&#259; de electric castle 2019?<br>
+                                                            <input type = "text" name = "impression" size = "100" >
+                                                        
+                                                        <li>Dori&#355;i s&#259; participa&#355;i anul viitor?<br>
+                                                            <ul>
+                                                                <li>
+                                                                    <input type = "radio" name = "nextyearpart" checked> Da
+                                                                </li>
+                                                                <li>
+                                                                    <input type = "radio" name = "nextyearpart"> Nu
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>De unde a&#355;i aflat de electric castle?<br>
+                                                            <ol start=100>
+                                                                <li>
+                                                                    <input type = "checkbox" name=comingreason> Prieteni
+                                                                
+                                                                <li>
+                                                                    <input type = "checkbox" name="comingreason"> Re&#355;ele de socializare
+                                                                </li>
+                                                                <li>
+                                                                    <input type = "checkbox" name="comingreason"> Afi&#351;ele din ora&#351;
+                                                                
+                                                                <li>
+                                                                    <input type = "checkbox" name="comingreason"> Altceva
+                                                                </li>
+                                                            </ol>
+                                                        
+                                                        <li>Ce am putea schimba? <br>
+                                                            <textarea name = "comment" rows = "4" cols = "100"></textarea>
+                                                        
+                                                        <li>Uploada&#355;i ni&#351;te fotografii de la Electric Castle: <br>
+                                                            <input type=file id = "filedoc">
+                                                        
+                                                    </ol>
+                                                </td>
+                                            
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="submit">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </fieldset>
+                            </td>
+                        
+                    </tbody>
+                </table>
+            </form>
+        </body>
+
+    </html>

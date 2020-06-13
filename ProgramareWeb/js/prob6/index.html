@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Problema 6
+        </title>
+    </head>
+    <body>
+        <style>
+            table {
+                border-collapse: collapse;
+                margin-top: 50px;
+            }
+
+            table td{
+                border: 1px solid black;
+                width: 50px;
+                text-align: center;
+            }
+        </style>
+        <div>
+            <span> N = </span>
+            <input type="text" maxlength="2" style = "width: 20px;" id = "text">
+            <input type="submit" value="Generate" onclick="send_click()">
+        </div>
+        <table id = "myTable">
+
+        </table>
+        
+        <script>
+            var current_x
+            var current_y
+            var table
+            var clicked = false
+            var n = 0
+            var first = false
+            var _row
+
+            initialize()
+
+            document.onkeydown = function(event) {
+            if(clicked){
+                switch (event.keyCode) {
+                case 37:
+                        if(current_y != 0){
+                            current_y -= 1 
+                            _row[current_x].cells[current_y + 1].innerHTML = _row[current_x].cells[current_y].innerHTML
+                            _row[current_x].cells[current_y].innerHTML = ""
+                        }
+                    break;
+                case 38:
+                        if(current_x != 0){
+                            current_x -= 1
+                            _row[current_x + 1].cells[current_y].innerHTML = _row[current_x].cells[current_y].innerHTML
+                            _row[current_x].cells[current_y].innerHTML = ""
+                        }
+                    break;
+                case 39:
+                        if(current_y != n - 1){
+                            current_y += 1
+                            _row[current_x].cells[current_y - 1].innerHTML = _row[current_x].cells[current_y].innerHTML
+                            _row[current_x].cells[current_y].innerHTML = ""
+                        }
+                    break;
+                case 40:
+                        if(current_x != n - 1){
+                            current_x += 1
+                            _row[current_x - 1].cells[current_y].innerHTML = _row[current_x].cells[current_y].innerHTML
+                            _row[current_x].cells[current_y].innerHTML = ""
+                        }
+                    break;
+                }
+                if(current_x === n - 1 && current_y === n - 1 && first){
+                    verify()
+                }
+            }
+        }
+            function initialize(){
+                table = document.getElementById("myTable")
+                _row = table.rows
+                clicked = true
+            }
+
+            function send_click(){
+                var txt = document.getElementById("text")
+                if(isNaN(txt.value)){
+                    clicked = false
+                }
+                else{
+                    n = parseInt(txt.value)
+                    if(n > 1)
+                        initialize()
+                        generate_game()
+                        first = true
+                }
+                
+            }
+            function verify(){
+                var ok = true
+                for(i = 0; i < n; i++)
+                    for(j = 0; j < n; j++)
+                        if(j > 0 && !(i === n - 1 && j === n - 1))
+                            if(!(_row[i].cells[j].innerHTML == parseInt(_row[i].cells[j-1].innerHTML) + 1)){
+                                ok = false
+                                break
+                            }
+                        else if(j === 0 && i > 0){
+                            if(!(_row[i].cells[j].innerHTML == parseInt(_row[i - 1].cells[n - 1].innerHTML) + 1)){
+                                ok=false
+                                break
+                            }
+                        }
+                if(ok){
+                    var ok = confirm("You've finished the game. Another one?")
+                    if(ok){
+                        n += 2
+                        generate_game()
+                    }
+                }
+            }
+            function generate_game(){
+                
+                if(first){
+                    i = table.rows.length
+                    while(i--){
+                        table.deleteRow(0)
+                    }
+                }
+
+                current_x = n - 1
+                current_y = n - 1
+
+                console.log(n)
+
+                var list = []
+                list.length = n*n - 1
+                for(i = 1; i < n*n; i++){
+                    list[i - 1] = i
+                }
+                list = shuffle(list)
+
+                var tmp = 0
+                for(i = 0; i < n; i++){
+                    var row = table.insertRow()
+                    for(j = 0; j < n; j++){
+                        var x = row.insertCell(0)
+                        if(i == n - 1 && j == 0)
+                            x.innerHTML = ""
+                        else{
+                            x.innerHTML = list[tmp]
+                            tmp++
+                        }
+                    }
+                }
+
+            }
+
+            function shuffle(array) {
+            var currentIndex = array.length, temporaryValue, randomIndex;
+
+            while (0 !== currentIndex) {
+
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+
+            return array;
+            }
+        </script>
+    </body>
+</html>
