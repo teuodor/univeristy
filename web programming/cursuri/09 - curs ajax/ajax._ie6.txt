@@ -1,5 +1,0 @@
-if (window.XMLHttpRequest)
-    request = new XMLHttpRequest();
-else // IE6 sau mai vechi
-    if (window.ActiveXObject)
-        request = new ActiveXObject("Microsoft.XMLHTTP");    
